@@ -1,0 +1,49 @@
+
+.main{
+    display: flex;
+    width: 100%;
+    }
+    
+    .sidebar{
+        flex-basis:17%;
+        margin-right: 20px;
+        border: 1px solid black;
+        height: 100vh;
+    }
+    
+    .username{
+        
+        padding: 15px;
+        border-bottom: 1px solid #000;
+    }
+    .content ul{
+    
+        list-style-type: none;
+    }
+    .content ul li{
+        padding: 15px;
+        border: 1px solid black;
+    }
+    .content ul li a{
+        text-decoration: none;
+        font-size: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: #922a2a;
+    }
+    
+    .active,.content ul li:hover{
+        background-color:blanchedalmond
+    }
+    
+    .details{
+        margin: 10px;
+    }
+    .profile{
+        width: 70%;
+        margin: 0 10px;
+        padding: 10px;
+    }
+    
+    .card{
+        padding: 10px;
+    }

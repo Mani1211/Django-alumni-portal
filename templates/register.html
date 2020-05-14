@@ -1,0 +1,126 @@
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head><center>
+<body bgcolor="pink">
+    
+    <form action="register" method="post">
+        {% csrf_token %}
+        <input type="text"  name="first_name" id="first_name" placeholder="first_name"><br>
+        <input type="text" name="last_name" id="last_name" placeholder="lastname"><br>
+        <input type="text" name="username" id="username" placeholder="username"><br>
+        <input type="email" name="email" id="email" placeholder="email"><br>
+        <input type="password" name="password1" id="password1" placeholder="password"><br>
+        <input type="password" name="password2" id="password2" placeholder="confirm password"><br>
+        <input type="submit" placeholder="sumbit">
+        
+    </form>
+    <div>
+        {% for message in messages %}
+        <h1>{{message}}</h1>
+        {% endfor %}
+    </div>
+</body>
+</center>
+</html> {% endcomment %}
+
+
+
+
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <link rel="stylesheet" href="{% static '/css/dashboard.css' %}">
+    <link rel="stylesheet" href="{% static '/css/addpost.css' %}">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+<header>
+  <nav class="nav">
+    <h3><i class="fas fa-glasses"></i>Alumni Portal</h3>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="">Profile</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+   
+      
+    </ul>
+  </nav>
+</header>
+<section>
+    <div class="main">
+
+    
+    
+
+<div class="addpost">
+    <h1>Register</h1>
+
+    <hr>
+  <div class="form">
+    <form action="register" method="POST" >
+    {% csrf_token %}
+      <div class="form-group">      
+          <label>First Name</label>
+            <input type="text" name="first_name" id="first_name">
+      </div>
+      <div class="form-group">      
+          <label>Last Name</label>
+            <input type="text" name="last_name" id="last_name">
+      </div>
+      <div class="form-group">      
+          <label>User Name</label>
+            <input type="text" name="username" id="username">
+      </div>
+
+     
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" name="email" id="email">
+      </div>
+
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" name="password1" id="password1">
+      </div>
+      <div class="form-group">
+        <label>Confirm Password</label>
+        <input type="password" name="password2" id="password2">
+      </div>
+    
+
+      <input class="button" type="submit" value="Submit">
+    </form>
+  </div>
+</div>
+
+
+
+
+    </div>
+
+</section>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://kit.fontawesome.com/10b23c199a.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
