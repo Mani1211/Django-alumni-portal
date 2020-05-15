@@ -26,14 +26,15 @@ body{
     width: 100%;
     height:60px;
     background-color: #07a8bd;
-    display: flex;
+    
     justify-content: flex-end;
   
 }
 
-.nav ul{
+.nav .navlist{
     list-style-type: none;
     line-height: 2;
+    display: flex;
 }
 
 .nav li a{
