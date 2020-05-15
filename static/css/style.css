@@ -27,7 +27,7 @@ body{
     background-color: #07a8bd;
 }
 
-.nav .navlist{
+.nav .navlink{
     list-style-type: none;
     line-height: 2;
     display: flex;
@@ -50,7 +50,7 @@ body{
     background: royalblue;
     padding: 10px;
 }
-.navlink div{
+.navlink .lists{
     flex: 2;
     justify-content: space-between;
 }
