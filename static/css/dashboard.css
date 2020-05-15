@@ -8,7 +8,7 @@
         flex-basis:17%;
         margin-right: 20px;
         border: 1px solid black;
-        height: 100vh;
+        height: auto;
     }
     
     .username{
@@ -46,4 +46,5 @@
     
     .card{
         padding: 10px;
+        width: 200px;
     }
