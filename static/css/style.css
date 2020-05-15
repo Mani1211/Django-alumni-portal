@@ -31,7 +31,6 @@ body{
     list-style-type: none;
     line-height: 2;
     display: flex;
-    justify-content: flex-end;
 }
 
 .nav li a{
@@ -44,6 +43,7 @@ body{
     font-size: 20px;
     padding: 10px;
     flex: 1;
+    justify-content: flex-end;
   
 }
 
