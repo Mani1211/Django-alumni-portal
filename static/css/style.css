@@ -33,6 +33,8 @@ body{
 .nav ul{
     list-style-type: none;
     line-height: 2;
+    display: flex;
+    flex: 1;
 }
 .nav li a{
     text-decoration: none;
