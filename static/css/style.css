@@ -50,7 +50,7 @@ body{
     background: royalblue;
     padding: 10px;
 }
-.navlink .lists{
+.navlink div{
     flex: 2;
     justify-content: space-between;
 }
