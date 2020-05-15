@@ -27,12 +27,18 @@ body{
     background-color: #07a8bd;
 }
 
-.nav .navlink{
-    list-style-type: none;
-    line-height: 2;
+.nav .navlist{
     display: flex;
 }
 
+.navlink .lists{
+    flex: 2;
+    justify-content: space-between;
+}
+.nav ul{
+    list-style-type: none;
+    line-height: 2;
+}
 .nav li a{
     text-decoration: none;
     color: black;
@@ -50,10 +56,7 @@ body{
     background: royalblue;
     padding: 10px;
 }
-.navlink .lists{
-    flex: 2;
-    justify-content: space-between;
-}
+
 
 @media(max-width:"954px"){
     img{
