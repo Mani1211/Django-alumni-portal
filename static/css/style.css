@@ -38,14 +38,21 @@ body{
     color: black;
     
 }
+
 .nav ul li{
     font-family: 'Lobster', cursive;
     font-size: 20px;
     padding: 10px;
 }
+.nav ul li:hover{
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    background: royalblue;
+    padding: 10px;
+}
 .nav .navlink .lists{
-    flex: 1;
-    justify-content: flex-end;
+    flex: 2;
+    justify-content: space-between;
 }
 
 @media(max-width:"954px"){
