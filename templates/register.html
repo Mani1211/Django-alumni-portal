@@ -43,23 +43,10 @@
     <link rel="stylesheet" href="{% static '/css/style.css' %}">
     <link rel="stylesheet" href="{% static '/css/dashboard.css' %}">
     <link rel="stylesheet" href="{% static '/css/addpost.css' %}">
-    <title>Hello, world!</title>
+    <title>Register</title>
   </head>
   <body>
-<header>
-  <nav class="nav">
-    <h3><i class="fas fa-glasses"></i>Alumni Portal</h3>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="register.html">Register</a></li>
-        <li><a href="">Profile</a></li>
-        <li><a href="dashboard.html">Dashboard</a></li>
-   
-      
-    </ul>
-  </nav>
-</header>
+{% include 'navbar.html' %}
 <section>
     <div class="main">
 

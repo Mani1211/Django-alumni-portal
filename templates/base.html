@@ -77,7 +77,7 @@
 
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Hello, world!</title>
+    <title>Alumni Portal</title>
   </head>
   <body>
 
@@ -91,7 +91,7 @@
         <div class="post">
           <h1>{{post.title}}</h1>
           {% comment %} <img src="{{post.image.url}}" alt="" width="600px" height="400px" data-fancybox > {% endcomment %}
-          <a data-fancybox href="{{post.image.url}}"> <img src="{{post.image.url}}" alt="" width="600px" height="400px" data-fancybox ></a>
+          <a data-fancybox data-caption="{{post.title}}" href="{{post.image.url}}"> <img src="{{post.image.url}}" alt="" width="600px" height="400px" data-fancybox ></a>
           <h4>{{post.title}}</h4>
         <p>{{post.description}}</p><br>
           <p>url:<a href="{{post.url}}">{{post.url}}</a></p>
